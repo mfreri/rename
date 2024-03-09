@@ -25,7 +25,7 @@ Change the name of file1.txt to file01.txt
 rename -n jpg
 Enumerate all the .jpg files from name.jpg to name_0.jpg onwards.
 
-Distributed under GPL-3 licence.
+Distributed under GPL-3 license.
 '''
 
 
