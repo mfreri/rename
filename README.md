@@ -1,6 +1,9 @@
 # Rename
 
-This is a tool for renaming files in Linux.
+This is a tool for renaming files on Linux.
+
+## Requirements
+Python 3.11 or higher accessible from /usr/bin/env/.
 
 ## Install
 
