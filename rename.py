@@ -31,6 +31,7 @@ Distributed under GPL-3 license.
 
 __VERSION__ = "v1.0"
 __RELEASE__ = "march 9, 2024"
+__AUTHOR__  = "Marcelo Freri"
 __CONTACT__ = "info@mfreri.com"
 __VERBOSE__ = True
 
@@ -74,7 +75,7 @@ class Messages:
 
 def display_version():
 	print(f"Rename {__VERSION__} - {__RELEASE__}.")
-	print(f"Developed by Marcelo Freri <{__CONTACT__}>.")
+	print(f"Developed by {__AUTHOR__} <{__CONTACT__}>.")
 
 
 def display_help(contact_info=True):
