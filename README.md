@@ -2,6 +2,16 @@
 
 This is a tool for renaming files in Linux.
 
+## Install
+
+Place the file `rename.py` inside a folder from your PATH list and set execution permission.
+
+```
+$  chmod +x rename.py
+```
+
+And you are good to go.
+
 ## Syntax
 
 ```

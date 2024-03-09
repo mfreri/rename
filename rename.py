@@ -24,12 +24,14 @@ Change the name of file1.txt to file01.txt
 
 rename -n jpg
 Enumerate all the .jpg files from name.jpg to name_0.jpg onwards.
+
+Distributed under GPL-3 licence.
 '''
 
 
-__VERSION__ = "v0.3b"
-__RELEASE__ = "january 11, 2023"
-__CONTACT__ = "mfreri@proton.me"
+__VERSION__ = "v1.0"
+__RELEASE__ = "march 9, 2024"
+__CONTACT__ = "info@mfreri.com"
 __VERBOSE__ = True
 
 
@@ -52,6 +54,7 @@ class Colors:
 
 
 class Messages:
+	# Constructor
 	def __init__(self):
 		pass
 
@@ -123,8 +126,11 @@ def get_files_with_extension(extension="*"):
 
 
 def change_extension(src, dst):
+	'''
+		Change the extension of the files *.src to *.dst.
+		Return True if all files were renamed, False otherwise.
+	'''
 	out = True
-	_msg_ = Messages()
 	# Obtain the list of files with extension src
 	file_list = get_files_with_extension(extension=src)
 	for file_ext in file_list:
@@ -136,6 +142,17 @@ def change_extension(src, dst):
 
 
 def enum_files(extension="*", separator = "_"):
+	'''
+		Enumerate the files with the given extension.
+		If no extension is passed, all files will be enumerated.
+		Return True if all files were renamed, False otherwise.
+		<separator> is the string that will be used to separate
+		the file name from the number.
+		Example:
+		file_a.txt -> file_a_0.txt
+		file_b.txt -> file_b_1.txt
+		file_c.txt -> file_c_2.txt
+	'''
 	num = 0
 	i = 0
 	out = True
@@ -199,4 +216,4 @@ if __name__ == "__main__":
 	if is_error:
 		msg.warning("Finished with errors.")
 		exit(1)
-
+	exit(0)
