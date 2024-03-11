@@ -25,7 +25,6 @@ Change the name of file1.txt to file01.txt
 rename -n jpg
 Enumerate all the .jpg files from name.jpg to name_0.jpg onwards.
 
-Distributed under GPL-3 license.
 '''
 
 
@@ -76,6 +75,10 @@ class Messages:
 def display_version():
 	print(f"Rename {__VERSION__} - {__RELEASE__}.")
 	print(f"Developed by {__AUTHOR__} <{__CONTACT__}>.")
+	print("")
+	print("Distributed under GPL-3 license <https://gnu.org/licenses/gpl.html>.")
+	print("This is free software: you are free to change and redistribute it.")
+	print("There is NO WARRANTY, to the extent permitted by law.")
 
 
 def display_help(contact_info=True):
